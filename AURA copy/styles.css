@@ -1,0 +1,57 @@
+:root {
+  --bg: #faf9f6;
+  --fg: #2a2a2a;
+  --muted: #5a5a5a;
+  --border: #e8e2d9;
+  --primary: #87a96b;
+  --accent: #e8a86c;
+  --danger: #b35c44;
+}
+
+html.dark {
+  --bg: #0b0f0c;
+  --fg: #f3f4f6;
+  --muted: #b7c0ba;
+  --border: #22302a;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Fallback for environments where Tailwind CDN styles don't apply. */
+html.dark body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* simple helpers used by the TSX */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Vertical writing used in map plots */
+.writing-vertical-lr {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Lightweight "animate-in" replacements (no build plugins) */
+@keyframes aura-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  animation: aura-fade-in 240ms ease-out both;
+}
+.fade-in { }
+.slide-in-from-top-2 { }
+.slide-in-from-bottom-8 { }
+
+/* Default typography */
+h1,h2,h3,h4 { letter-spacing: -0.01em; }

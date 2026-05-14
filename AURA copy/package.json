@@ -1,0 +1,12 @@
+{
+  "name": "aura-vanilla",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 5173"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}

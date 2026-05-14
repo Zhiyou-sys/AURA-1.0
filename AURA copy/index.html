@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Aura 绿漪</title>
+
+    <!-- Tailwind (CDN, no build required) -->
+    <script>
+      // Tailwind CDN reads `tailwind.config` before it loads.
+      window.tailwind = window.tailwind || {};
+      window.tailwind.config = {
+        darkMode: 'class',
+      };
+      // Some CDN builds read from the global `tailwind` identifier directly.
+      tailwind = window.tailwind;
+      tailwind.config = {
+        darkMode: 'class',
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="min-h-screen bg-[#FAF9F6] text-[#2A2A2A] dark:bg-[#0B0F0C] dark:text-[#F3F4F6] font-sans selection:bg-[#B0D3A1] selection:text-[#2A2A2A]">
+    <div id="app"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
